@@ -501,6 +501,7 @@ public class CircleMenuLayout extends ViewGroup
 			{
 				tv.setVisibility(View.VISIBLE);
 				tv.setText(mItemTexts[i]);
+				tv.setTextColor(android.graphics.Color.parseColor("#343434"));
 			}
 
 			// 添加view到容器中
