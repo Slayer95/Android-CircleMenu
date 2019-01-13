@@ -1,0 +1,42 @@
+apply plugin: 'com.android.library'
+
+ext {
+    libraryName = 'Android-Circle-Menu'
+    libraryDescription = 'Android circle menu'
+    libraryVersion = '1.0.0'
+    artifact = 'android-circle-menu'
+    developerId = 'hongyangAndroid'
+    developerName = '张鸿洋'
+    publishedGroupId = 'com.zhy.view'
+    siteUrl = 'https://github.com/hongyangAndroid/Android-Circle-Menu'
+    gitUrl = 'https://github.com/hongyangAndroid/Android-Circle-Menu.git'
+    bintrayRepo = 'maven'
+    bintrayName = 'android-circle-menu'
+    licenseName = 'Apache 2.0'
+    allLicenses = ['Apache 2.0']
+}
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+group = publishedGroupId
+
+version = libraryVersion

@@ -12,7 +12,7 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.zhy.ccbCricleMenu.R;
+import com.zhy.view.R;
 
 /**
  * <pre>
